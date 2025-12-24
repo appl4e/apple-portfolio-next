@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "project_name": "Apple Mahmood Portfolio",
+    "version": "1.1.0",
+    "status": "Implementation",
+    "description": "A high-performance, AI-augmented portfolio with a premium light-wizard aesthetic and ocean-themed refinements."
+  },
+  "architecture": {
+    "framework": "Next.js 14+ (App Router)",
+    "language": "TypeScript (Strict)",
+    "styling": "Tailwind CSS + ReUI + Shadcn/UI",
+    "animation": "Framer Motion",
+    "state_forms": "TanStack Query + React Hook Form + Yup",
+    "backend": "Prisma + MySQL",
+    "icons": "Lucide React",
+    "package_manager": "npm"
+  },
+  "design_system": {
+    "philosophy": "The Light Code Wizard (Premium & Editorial)",
+    "theme": "Light Mode (Strict)",
+    "colors": {
+      "background": "bg-gradient-to-br from-slate-50 via-gray-50 to-sky-50",
+      "surface": "bg-white/4 backdrop-blur-xs border border-white/10 shadow-xl",
+      "primary": "text-blue-500",
+      "secondary": "text-indigo-500",
+      "accent": "text-slate-900 bg-slate-100",
+      "text_heading": "text-slate-800",
+      "text_body": "text-slate-600",
+      "gradients": {
+        "primary": "rgba(37, 121, 255, 0.48)",
+        "secondary": "rgba(98, 14, 255, 0.6)",
+        "ocean": ["rgba(59, 130, 246, 0.4)", "rgba(20, 184, 166, 0.3)"]
+      }
+    },
+    "typography": {
+      "headings_primary": "Playfair Display (Serif) for high-impact titles",
+      "headings_secondary": "Inter / JetBrains Mono (Sans/Mono) for labels",
+      "body": "Inter / Geist Sans (Clean Sans)"
+    },
+    "animation_tokens": {
+      "fade_up": {
+        "initial": { "y": 20, "opacity": 0 },
+        "animate": { "y": 0, "opacity": 1 }
+      },
+      "hover_card": { "scale": 1.02, "y": -5, "shadow": "xl" },
+      "background_shapes": [
+        "Floating Blobs",
+        "Hexagonal Grids",
+        "Gradient Waves",
+        "Interactive Particles"
+      ]
+    }
+  },
+  "directory_structure": {
+    "app": {
+      "layout.tsx": "RootLayout (includes Navbar, Footer, Providers)",
+      "page.tsx": "HomePage",
+      "about/page.tsx": "AboutPage",
+      "projects/page.tsx": "ProjectsPage",
+      "contact/page.tsx": "ContactPage"
+    },
+    "components": {
+      "ui": "Atomic components (Button, Card, Badge, Input, BackgroundShapes)",
+      "sections": "Page-specific sections (Hero, ServicesGrid, SkillsShowcase)",
+      "layout": "Global layout components (Header, Footer, MobileMenu)"
+    },
+    "lib": {
+      "utils.ts": "CN helper, formatters",
+      "data.ts": "Typed interface for MASTER_PROJECT_CONTEXT.md"
+    },
+    "public": {
+      "assets": "Static images, resume.pdf"
+    }
+  },
+  "ui_libraries": [
+    "Tailwind CSS",
+    "ReUI",
+    "Shadcn/UI",
+    "Mantine UI",
+    "Ant Design",
+    "Bootstrap 5",
+    "React Bootstrap",
+    "Ng Bootstrap",
+    "Base UI"
+  ],
+  "state_management_forms": [
+    "TanStack Query",
+    "React Hook Form",
+    "Yup",
+    "Zod",
+    "Jotai",
+    "React Router DOM"
+  ],
+  "visuals_charts": [
+    "Framer Motion",
+    "AOS",
+    "Apex Charts",
+    "Swiper",
+    "Owl Carousel",
+    "Revolution Slider"
+  ],
+  "backend_data": ["Prisma", "MySQL", "REST API", "GraphQL", "Firebase"],
+  "sitemap": [
+    { "name": "Home", "path": "/", "type": "Landing" },
+    { "name": "About", "path": "/about", "type": "Story" },
+    { "name": "Portfolio", "path": "/projects", "type": "Showcase" },
+    { "name": "Contact", "path": "/contact", "type": "Interaction" }
+  ],
+  "pages": {
+    "home": {
+      "path": "/",
+      "metadata": {
+        "title": "Apple Mahmood | Senior Frontend Architect",
+        "description": "Portfolio of a Senior Frontend Engineer specializing in Next.js, React, and AI."
+      },
+      "sections": [
+        {
+          "id": "hero",
+          "component": "HeroSection",
+          "layout": "Centered, High Impact",
+          "data_source": "profile",
+          "ux_notes": "Interactive particles background. Playfair Display headlines. Staggered fade-in."
+        },
+        {
+          "id": "expertise",
+          "component": "ServicesGrid",
+          "layout": "Bento Grid (3x2)",
+          "data_source": "services",
+          "ux_notes": "Top-aligned flipped ocean wave with gradients. Glass cards. Subtle scale on hover."
+        },
+        {
+          "id": "skills_showcase",
+          "component": "SkillsShowcase",
+          "layout": "Categorized Grid",
+          "data_source": "top_skills + tech_stack + soft_skills",
+          "ux_notes": "HexGrid background. Two-column split: Top Skills & Soft Skills vs. Full Categorized Tech Stack grid."
+        },
+        {
+          "id": "featured_work",
+          "component": "ProjectCarousel",
+          "layout": "Horizontal Scroll or Grid",
+          "data_source": "projects (filtered: top 3)",
+          "ux_notes": "Large preview images. Tech tags with accent variants. 'View Case Study' button."
+        },
+        {
+          "id": "testimonials",
+          "component": "TestimonialSlider",
+          "layout": "Cards",
+          "data_source": "testimonials",
+          "ux_notes": "Auto-playing slider. Focus on 'Leadership' and 'Problem Solving' quotes."
+        }
+      ]
+    },
+    "about": {
+      "path": "/about",
+      "metadata": {
+        "title": "About | Apple Mahmood",
+        "description": "10+ Years of Engineering Leadership and Architecture."
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "component": "BioSection",
+          "layout": "Split (Image Left, Text Right)",
+          "data_source": "profile.bio + fun_facts",
+          "ux_notes": "Clean corporate headshot. Stats displayed as counters with Lucide icons."
+        },
+        {
+          "id": "soft_skills",
+          "component": "SkillBubbles",
+          "layout": "Cloud / Cluster",
+          "data_source": "soft_skills",
+          "ux_notes": "Max-width 4xl container. Interactive physics-based bubbles."
+        },
+        {
+          "id": "experience",
+          "component": "TimelineVertical",
+          "layout": "Vertical Line",
+          "data_source": "experience",
+          "ux_notes": "Connecting line represents the career journey. Accordion for details."
+        },
+        {
+          "id": "education",
+          "component": "CertGrid",
+          "layout": "Compact Grid",
+          "data_source": "education + certifications",
+          "ux_notes": "Minimal card style with secondary color accents. Focus on institutional branding."
+        }
+      ]
+    },
+    "projects": {
+      "path": "/projects",
+      "metadata": {
+        "title": "Work | Apple Mahmood",
+        "description": "Showcase of React, Next.js, and WordPress projects."
+      },
+      "sections": [
+        {
+          "id": "project_gallery",
+          "component": "FilterableGallery",
+          "layout": "Masonry Grid",
+          "data_source": "projects",
+          "features": [
+            "Category Filter (React/Next.js, WordPress/CMS, Frontend, AI)",
+            "Search",
+            "Modal Detail View"
+          ],
+          "ux_notes": "Filter tabs at top. Smooth layout transition using Framer Motion LayoutGroup."
+        }
+      ]
+    },
+    "contact": {
+      "path": "/contact",
+      "metadata": {
+        "title": "Contact | Apple Mahmood",
+        "description": "Get in touch for frontend architecture consulting."
+      },
+      "sections": [
+        {
+          "id": "contact_hero",
+          "component": "ContactForm",
+          "layout": "Split (Contact Info Left, Form Right)",
+          "data_source": "contact",
+          "ux_notes": "Large 'Let's Build Something' header in Playfair Serif. Standardized input spacing and Blue/Indigo focus rings."
+        }
+      ]
+    }
+  }
+}

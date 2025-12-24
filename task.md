@@ -1,0 +1,26 @@
+# Tasks
+
+- [x] **Phase 1: Discovery & Context**
+  - [x] Create `MASTER_PROJECT_CONTEXT.md` <!-- id: 0 -->
+  - [x] Scrape content from local site <!-- id: 1 -->
+  - [x] Integrate modern portfolio & resume data <!-- id: 1.1 -->
+- [x] **Phase 2: Project Setup** <!-- id: 2 -->
+  - [x] Initialize Next.js App (App Router, Tailwind) <!-- id: 3 -->
+  - [x] Install UI Deps (ReUI, Framer Motion, Lucide) <!-- id: 4 -->
+  - [x] Install Logic Deps (TanStack Query, Prisma, Hook Form) <!-- id: 4.1 -->
+  - [x] Configure `tailwind.config.ts` (via `globals.css`) with Design System colors <!-- id: 5 -->
+  - [x] Create folder structure (components/ui, lib, styles) <!-- id: 6 -->
+- [ ] **Phase 3: Core Components** <!-- id: 7 -->
+  - [x] Build `Header` (Responsive, Glassmorphism) <!-- id: 8 -->
+  - [x] Build `Hero` Section (Animated background) <!-- id: 9 -->
+  - [x] Build `Footer` <!-- id: 10 -->
+- [ ] **Phase 4: Feature Implementation** <!-- id: 11 -->
+  - [x] Implement `ProjectCard` component <!-- id: 12 -->
+  - [x] Build `Home` page layout <!-- id: 13 -->
+  - [x] Build `About` page <!-- id: 14 -->
+  - [x] Build `Projects` page <!-- id: 15 -->
+  - [x] Build `Contact` page <!-- id: 16 -->
+- [ ] **Phase 5: Refinement & Polish** <!-- id: 17 -->
+  - [ ] Implement Smooth Scroll & Transitions <!-- id: 18 -->
+  - [ ] Configure SEO & Meta Tags globally <!-- id: 19 -->
+  - [ ] Final UI Review & Bug Fixes <!-- id: 20 -->
